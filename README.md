@@ -19,5 +19,6 @@ Problem : To effectively participate in the stock market, you need to build a pi
    - `stock_data_daily.py` to update the data daily.
    - `stock_subscribe.py` to save the ticker of interest.
    - `publish_data_subscribe.py` to publish data of the subscribed stocks to Pub/Sub.
-   - `stock_analysis_.py` for calculating stable growth stocks and then save them to BigQuery.
+   - `stock_analysis_.py` for calculating stable growth stocks and then save them to BigQuery from Dataproc Spark.
    - To run `stock_data_daily.py` and `publish_data_subscribe.py`, you need to create a Cloud Function and copy the code from `gcs_to_bigquery_function.py` and `pubsub_to_bigquery_function` for use. You can add `google.cloud` and `google.cloud.bigquery` to `requirements.txt`.
+   - `dags` folder to contain Airflow pipelines update data
